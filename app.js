@@ -13,9 +13,12 @@ const API_URL = 'https://is-moayad-asleep.onrender.com';
 let ownerPassword = null;
 
 // Doctor image URLs
-const DOCTOR_ASLEEP_IMAGE = "https://cdn-icons-png.flaticon.com/512/3588/3588495.png"; // Sleeping doctor
-const DOCTOR_AWAKE_IMAGE = "https://cdn-icons-png.flaticon.com/512/3588/3588658.png";  // Awake doctor
-const DOCTOR_UNKNOWN_IMAGE = "https://cdn-icons-png.flaticon.com/512/3588/3588621.png"; // Uncertain doctor
+// Doctor image paths - update these to your local image files
+const DOCTOR_ASLEEP_IMAGE = "./images/doctor-sleeping.png"; // Sleeping doctor
+const DOCTOR_AWAKE_IMAGE = "./images/doctor-awake.png";     // Awake doctor
+const DOCTOR_UNKNOWN_IMAGE = "./images/doctor-unknown.png"; // Uncertain doctor
+
+// const DOCTOR_UNKNOWN_IMAGE = "https://cdn-icons-png.flaticon.com/512/3588/3588621.png"; // Uncertain doctor
 
 // Update the "last checked" time
 function updateLastCheckedTime() {
