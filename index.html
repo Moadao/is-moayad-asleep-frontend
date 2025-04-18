@@ -4,13 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Am I Asleep?</title>
-  <script defer src="app.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="flex items-center justify-center min-h-screen bg-gray-100">
   <div class="bg-white p-8 rounded-2xl shadow-xl text-center space-y-6 w-full max-w-md">
     <h1 class="text-2xl font-bold">Am I Asleep?</h1>
-    <div id="statusBox" class="text-xl font-semibold p-4 rounded-xl"></div>
+    <div id="statusBox" class="text-xl font-semibold p-4 rounded-xl bg-gray-100">
+      <div class="flex justify-center items-center h-32">
+        <div class="animate-pulse">Loading...</div>
+      </div>
+    </div>
 
     <div id="controls" class="space-y-4 hidden">
       <p class="text-sm text-gray-500">Owner controls</p>
@@ -25,5 +28,7 @@
       <button id="loginBtn" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 w-full">Login as Owner</button>
     </div>
   </div>
+  
+  <script defer src="app.js"></script>
 </body>
 </html>
