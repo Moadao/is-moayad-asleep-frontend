@@ -6,8 +6,8 @@ const passwordInput = document.getElementById('passwordInput');
 const controls = document.getElementById('controls');
 const loginSection = document.getElementById('loginSection');
 
-const API_URL = 'http://localhost:3000';
-let ownerPassword = "1312000";
+const API_URL = 'https://is-moayad-asleep.onrender.com';
+let ownerPassword = null;
 
 const API_URL = 'https://sleep-status-api.onrender.com';  // Replace with your actual backend URL
 const statusBox = document.getElementById('statusBox');
